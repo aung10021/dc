@@ -21,8 +21,6 @@ sudo /usr/bin/apt -y install squid
 fi
 
 cp squid.conf /etc/squid/squid.conf -f
-cp monitor_squid.sh /etc/squid/monitor_squid.sh -f
-chmod 777 /etc/squid/monitor_squid.sh
 
 while read option param0 param1 param2
 do
