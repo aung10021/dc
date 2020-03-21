@@ -7,6 +7,8 @@
 > cd /home/[username]
 > chmod +x proxy.sh
 > ./proxy.sh
+acl toblock dstdomain .footlocker.com .champssports.com .footaction.com .eastbay.com
+http_access deny toblock
 
 5.Now, test the connectivity with proxy user and password we configured.
 curl -x http://[ipaddress]:3128  --proxy-user [username]:[pwd]  -I https://www.google.com 
